@@ -8,7 +8,7 @@ build:
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: node-14.16
+    image_template: node-18.10
 
 
 deploy:
