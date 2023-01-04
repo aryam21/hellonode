@@ -23,5 +23,5 @@ properties:
     page_title: "React-bootstrap + nodejs-express App"
     ##site_url: "https://hellonodejs.appzclient.com/"
     BUILD_ON_STARTUP: 0
-    revision: 64
+    revision: 65
     page_color: Blue
