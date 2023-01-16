@@ -18,14 +18,15 @@ deploy:
     - 8080
     - 80
 volumes:
-   volumeMounts:
-    - name: apmsocketpath
-      mountPath: /var/run/datadog    
+    - claim: apmsocketpath
+      mount: /var/run/datadog
+      name: apmsocketpath
+      size: 5Gi   
       
 properties:
     page_title: "React-bootstrap + nodejs-express App"
-    ##site_url: "https://hellonodejs.appzclient.com/"
-    DD_TRACE_AGENT_URL: 'unix:///var/run/datadog/apm.socket'
+    #site_url: "https://hellonodejs.appzclient.com/"
+    DD_TRACE_AGENT_URL: unix:///var/run/datadog/apm.socket
     BUILD_ON_STARTUP: 0
     revision: 68
     page_color: Blue
